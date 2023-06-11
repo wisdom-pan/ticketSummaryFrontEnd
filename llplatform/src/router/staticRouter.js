@@ -83,7 +83,8 @@ const staticRouter = [
         name: 'drag',
         title: 'menu.drag',
         icon: 'el-icon-rank',
-        component: () => import('@/views/pages/PageDrag')
+        // component: () => import('@/views/pages/PageDrag')
+        component: () => import('@/views/error/AppError404')
       }, {
         path: '/user',
         name: 'user',
@@ -109,6 +110,8 @@ const staticRouter = [
         title: 'menu.about',
         icon: 'el-icon-star-off',
         component: () => import('@/views/pages/PageAbout')
+        
+        // component: () => import('@/views/error/AppError404')
       }
     ]
   }, {

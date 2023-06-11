@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0a4d2e"],{"07a2":function(n,t,o){"use strict";o.r(t);var a,e,i={data:function(){return{url:""}},created:function(){this.goToExternalLink()},methods:{goToExternalLink:function(){window.open("http://kuaijieai.com","_blank")}}},u=i,c=o("2877"),l=Object(c["a"])(u,a,e,!1,null,null,null);t["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d0a4d2e.39dc26e8.js.map

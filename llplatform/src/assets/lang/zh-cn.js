@@ -29,17 +29,16 @@ export default {
   },
   menu: {
     home: '首页',
-    table: '表格',
-    form: '表单',
-    formBase: '基本表单',
-    richText: '富文本编辑',
-    chart: '图表',
-    error: '错误',
-    drag: '拖曳',
+    table: '工单查询',
+    form: '工单预约',
+    formBase: '工单详情',
+    richText: '工单问题编辑',
+    chart: '工单统计',
+    error: '错误页',
     settings: '个人设置',
     modifyPass: '修改密码',
     permissions: '用户权限',
-    about: '关于项目'
+    about: '关于我们'
   },
   header: {
     languageSelect: '选择语言',

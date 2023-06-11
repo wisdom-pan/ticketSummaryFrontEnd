@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%;">
-    <el-card>
+    <!-- <el-card>
       {{$t('else.learn')}}
       <a style="color: #409eff" href="http://element-cn.eleme.io/#/zh-CN/component/table">Element Table</a><br/>
       {{$t('else.example')}}
@@ -8,7 +8,7 @@
          style="color: #409eff" target="_blank">
         https://github.com/linjinze999/vue-llplatform/blob/vue-cli3/llplatform/src/views/pages/PageTable.vue
       </a>
-    </el-card>
+    </el-card> -->
     <el-card style="margin-top: 20px;">
       <el-form :inline="true" :model="formInline" ref="formInline" :rules="rules">
         <el-form-item label="名字：" prop="param1">

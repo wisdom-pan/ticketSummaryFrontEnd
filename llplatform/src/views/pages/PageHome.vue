@@ -29,8 +29,8 @@
             <i class="el-icon-document" style="color: #67C23A;"></i>
           </div>
           <div class="m-content">
-            <p>代码量</p>
-            <p class="m-count">{{ info.code }}</p>
+            <p>工单预约</p>
+            <p class="m-count">3</p>
           </div>
         </el-card>
       </el-col>
@@ -40,8 +40,8 @@
             <i class="el-icon-sunrise-1" style="color: #409EFF;"></i>
           </div>
           <div class="m-content">
-            <p>天气</p>
-            <p>{{ info.weather }}</p>
+            <p>统计</p>
+            <p>4</p>
           </div>
         </el-card>
       </el-col>
@@ -52,7 +52,7 @@
           <ve-line :data="chartData1" :settings="chartSettings1"></ve-line>
         </el-card>
       </el-col>
-      <el-col :sm="24" :lg="6">
+      <!-- <el-col :sm="24" :lg="6">
         <el-row :gutter="20" align>
           <el-col :sm="12" :lg="24">
             <el-card class="m-box-card" shadow="hover"
@@ -86,9 +86,9 @@
             </el-card>
           </el-col>
         </el-row>
-      </el-col>
+      </el-col> -->
     </el-row>
-    <el-row :gutter="20">
+    <!-- <el-row :gutter="20">
       <el-col :sm="24" :lg="12">
         <el-card class="m-box-card" shadow="hover" style="height: 300px;">
           <el-table :data="tableData2" style="width: 100%" :row-class-name="tableRowClassName">
@@ -141,19 +141,19 @@
           <ve-scatter :data="chartData2" :settings="chartSettings2"></ve-scatter>
         </el-card>
       </el-col>
-    </el-row>
+    </el-row> -->
   </div>
 </template>
 
 <script>
 import VeLine from 'v-charts/lib/line.common'
-import VeScatter from 'v-charts/lib/scatter.common'
+// import VeScatter from 'v-charts/lib/scatter.common'
 
 export default {
   name: 'PageHome',
   components: {
-    VeLine,
-    VeScatter
+    VeLine
+    // VeScatter
   },
   data () {
     return {

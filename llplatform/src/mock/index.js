@@ -23,18 +23,18 @@ export default {
       'name': '林锦泽',
       'roles': ['admin'],
       'permissions': [
-        { name: 'index' },
-        { name: 'table' },
-        { name: 'formsBase' },
-        { name: 'formsEdit' },
-        { name: 'charts' },
-        { name: 'errorDemo403' },
-        { name: 'errorDemo404' },
-        { name: 'errorDemo500' },
-        { name: 'drag' },
-        { name: 'userPassword' },
-        { name: 'userPermissions' },
-        { name: 'about' }
+        { 'name': 'index' },
+        { 'name': 'table' },
+        { 'name': 'formsBase' },
+        { 'name': 'formsEdit' },
+        { 'name': 'charts' },
+        { 'name': 'errorDemo403' },
+        { 'name': 'errorDemo404' },
+        { 'name': 'errorDemo500' },
+        { 'name': 'drag' },
+        { 'name': 'userPassword' },
+        { 'name': 'userPermissions' },
+        { 'name': 'about' }
       ]
     })
     Mock.mock('/api/user/changePassword', {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-card>
+    <!-- <el-card>
       {{$t('else.learn')}}
       <a style="color: #409eff"
          href="https://www.awesomes.cn/repo/surmon-china/vue-quill-editor">vue-quill-editor</a><br/>
@@ -9,7 +9,7 @@
          style="color: #409eff" target="_blank">
         https://github.com/linjinze999/vue-llplatform/blob/vue-cli3/llplatform/src/views/pages/forms/PageFormsEdit.vue
       </a>
-    </el-card>
+    </el-card> -->
     <br/>
     <el-card style="height: 610px;">
       <quill-editor

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-card>
+    <!-- <el-card>
       {{$t('else.learn')}}
       <a style="color: #409eff" href="https://www.npmjs.com/package/vuedraggable">Vue.Draggable</a><br/>
       {{$t('else.example')}}
@@ -8,7 +8,7 @@
          style="color: #409eff" target="_blank">
         https://github.com/linjinze999/vue-llplatform/blob/vue-cli3/llplatform/src/views/pages/PageDrag.vue
       </a>
-    </el-card>
+    </el-card> -->
     <br/>
     <el-card>
       <el-row :gutter="20">

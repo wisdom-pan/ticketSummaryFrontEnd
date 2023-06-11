@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-card>
+    <!-- <el-card>
       {{$t('else.learn')}}
       <a href="https://v-charts.js.org/#/" style="color: #409eff">v-charts</a><br/>
       {{$t('else.example')}}
@@ -8,7 +8,7 @@
          style="color: #409eff" target="_blank">
         https://github.com/linjinze999/vue-llplatform/blob/vue-cli3/llplatform/src/views/pages/PageCharts.vue
       </a>
-    </el-card>
+    </el-card> -->
     <br/>
     <el-card>
       <el-tabs v-model="activeName">

@@ -3,7 +3,7 @@
     <router-link to="/index">
       <div class="logo" :class="{'logo-hide': !openNav}">
         <img src="../../assets/logo.png" class="image"/>
-        <span class="text">LLPlatform</span>
+        <span class="text">工单系统</span>
       </div>
     </router-link>
     <div class="content">
