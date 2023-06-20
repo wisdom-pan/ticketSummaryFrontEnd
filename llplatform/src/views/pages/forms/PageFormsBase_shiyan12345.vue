@@ -43,13 +43,13 @@
                   </el-form-item>
                 </el-col>
               </el-form-item>
-              <el-form-item label="问题来源" prop="type">
+              <!-- <el-form-item label="问题来源" prop="type">
                 <el-checkbox-group v-model="ruleFormInput.type">
                   <el-checkbox label="12345" name="type"></el-checkbox>
                   <el-checkbox label="东风通信" name="type"></el-checkbox>
                   <el-checkbox label="其他" name="type"></el-checkbox>
                 </el-checkbox-group>
-              </el-form-item>
+              </el-form-item> -->
               <el-form-item label="输入问题" prop="inputText">
                 <el-input
                   v-model="ruleFormInput.inputText"
@@ -67,7 +67,7 @@
             </el-form>
           </el-card>
         </el-tab-pane>
-        <el-tab-pane class="Form" label="12345工单详情" name="second">
+        <el-tab-pane class="Form" label="工单详情" name="second">
           <el-card shadow="hover">
             <el-form
               :model="ruleFormOutput"
@@ -183,7 +183,7 @@
                   <el-input v-model="ruleFormOutput.dealType"></el-input>
                 </el-form-item>
               </el-col>
-               <el-col :span="18">
+               <!-- <el-col :span="18">
                 <el-form-item label="处理过程及结果" prop="dealResult">
                   <el-input v-model="ruleFormOutput.dealResult"
                   type="textarea"
@@ -206,226 +206,10 @@
                 <el-form-item label="是否满意(不满意原因)" prop="isArgee">
                   <el-input v-model="ruleFormOutput.isArgee"></el-input>
                 </el-form-item>
-              </el-col>
+              </el-col> -->
               <el-col :span="18">
               <el-form-item>
                 <el-button @click="resetForm('ruleFormOutput')">重置</el-button>
-              </el-form-item>
-              </el-col>
-            </el-form>
-          </el-card>
-        </el-tab-pane>
-        <el-tab-pane class="Form" label="荆门12345工单详情" name="third">
-          <el-card shadow="hover">
-            <el-form
-              :model="ruleFormOutput"
-              :rules="rules"
-              ref="ruleFormOutput"
-              label-width="120px"
-            >
-              <el-col :span="11">
-                <el-form-item
-                  label="市民姓名"
-                  prop="userName"
-                  :required="false"
-                >
-                  <el-input v-model="ruleFormOutput.userName"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="联系方式" prop="phoneNumber">
-                  <el-input v-model="ruleFormOutput.phoneNumber"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="证件类型" prop="idCardType">
-                  <el-input v-model="ruleFormOutput.idCardType"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="证件号码" prop="idCardNumber">
-                  <el-input v-model="ruleFormOutput.idCardNumber"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="市民性别" prop="gender">
-                  <el-radio-group v-model="ruleFormOutput.gender">
-                    <el-radio label="男"></el-radio>
-                    <el-radio label="女"></el-radio>
-                    <el-radio label="未知"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="工单类型" prop="ticketType">
-                  <el-radio-group v-model="ruleFormOutput.ticketType">
-                    <el-radio label="咨询"></el-radio>
-                    <el-radio label="建议"></el-radio>
-                    <el-radio label="求助"></el-radio>
-                    <el-radio label="投诉"></el-radio>
-                    <el-radio label="表扬"></el-radio>
-                    <el-radio label="举报"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="是否回放" prop="isVisit">
-                  <el-radio-group v-model="ruleFormOutput.isVisit">
-                    <el-radio label="回访"></el-radio>
-                    <el-radio label="不回访"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="紧急程度" prop="emergencyLevel">
-                  <el-radio-group v-model="ruleFormOutput.emergencyLevel">
-                    <el-radio label="一般"></el-radio>
-                    <el-radio label="紧急"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="归属地" prop="poisition">
-                  <el-input v-model="ruleFormOutput.poisition"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="诉求地址" prop="poisitionInfo">
-                  <el-input v-model="ruleFormOutput.poisitionInfo"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="18">
-              <el-form-item label="工单标题" prop="title">
-                <el-input
-                  v-model="ruleFormOutput.title"
-                  type="textarea"
-                  :autosize="{ minRows: 2, maxRows: 2 }"
-                ></el-input>
-              </el-form-item>
-              </el-col>
-              <el-col :span="18">
-              <el-form-item label="诉求内容" prop="content">
-                <el-input
-                  v-model="ruleFormOutput.content"
-                  type="textarea"
-                  :autosize="{ minRows: 2, maxRows: 2 }"
-                ></el-input>
-              </el-form-item>
-              </el-col>
-              <el-col :span="18">
-              <el-form-item label="诉求目的" prop="dealGoal">
-                <el-input
-                  v-model="ruleFormOutput.dealGoal"
-                  type="textarea"
-                  :autosize="{ minRows: 2, maxRows: 2 }"
-                ></el-input>
-              </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="诉求归口" prop="contentType">
-                  <el-input v-model="ruleFormOutput.contentType"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="12">
-                <el-form-item label="处理方式" prop="dealType">
-                  <el-input v-model="ruleFormOutput.dealType"></el-input>
-                </el-form-item>
-              </el-col>
-               <el-col :span="18">
-                <el-form-item label="处理过程及结果" prop="dealResult">
-                  <el-input v-model="ruleFormOutput.dealResult"
-                  type="textarea"
-                  :autosize="{ minRows: 3, maxRows: 3}"
-                  >
-                  </el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="10">
-                <el-form-item label="责任单位" prop="responsibleDp">
-                  <el-input v-model="ruleFormOutput.responsibleDp"></el-input>
-                </el-form-item>
-              </el-col>
-                 <el-col :span="11">
-                <el-form-item label="回访情况" prop="visitInfo">
-                  <el-input v-model="ruleFormOutput.visitInfo"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="12">
-                <el-form-item label="是否满意(不满意原因)" prop="isArgee">
-                  <el-input v-model="ruleFormOutput.isArgee"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="18">
-              <el-form-item>
-                <el-button @click="resetForm('ruleFormOutput')">重置</el-button>
-              </el-form-item>
-              </el-col>
-            </el-form>
-          </el-card>
-        </el-tab-pane>
-        <el-tab-pane class="Form" label="东风通信工单详情" name="fourth">
-          <el-card shadow="hover">
-            <el-form
-              :model="ruleFormOutputType2"
-              :rules="rules"
-              ref="ruleFormOutputType2"
-              label-width="100px"
-            >
-              <el-col :span="11">
-                <el-form-item label="工单标题" prop="ticketTitleType2">
-                  <el-input v-model="ruleFormOutputType2.ticketTitleType2"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="18">
-                <el-form-item label="工单类型" prop="ticketType2">
-                  <el-radio-group v-model="ruleFormOutputType2.ticketType2">
-                    <el-radio label="咨询"></el-radio>
-                    <el-radio label="建议"></el-radio>
-                    <el-radio label="救援"></el-radio>
-                    <el-radio label="投诉"></el-radio>
-                    <el-radio label="建议意见"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="是否回访" prop="isVisitType2">
-                  <el-radio-group v-model="ruleFormOutputType2.isVisitType2">
-                    <el-radio label="是"></el-radio>
-                    <el-radio label="否"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="11">
-                <el-form-item label="紧急程度" prop="emergencyLevelType2">
-                  <el-radio-group v-model="ruleFormOutputType2.emergencyLevelType2">
-                    <el-radio label="是"></el-radio>
-                    <el-radio label="否"></el-radio>
-                  </el-radio-group>
-                </el-form-item>
-              </el-col>
-              <el-col :span="18">
-                <el-form-item label="车辆底盘号" prop="carNumber">
-                  <el-input v-model="ruleFormOutputType2.carNumber"></el-input>
-                </el-form-item>
-              </el-col>
-              
-              <el-col :span="18">
-              <el-form-item label="诉求内容" prop="contentType2">
-                <el-input
-                  v-model="ruleFormOutputType2.contentType2"
-                  type="textarea"
-                  :autosize="{ minRows: 2, maxRows: 2 }"
-                ></el-input>
-              </el-form-item>
-              </el-col>
-              <el-col :span="18">
-                <el-form-item label="诉求目的" prop="goal">
-                  <el-input v-model="ruleFormOutputType2.goal"></el-input>
-                </el-form-item>
-              </el-col>
-              <el-col :span="18">
-              <el-form-item>
-                <el-button @click="resetForm('ruleFormOutputType2')">重置</el-button>
               </el-form-item>
               </el-col>
             </el-form>
@@ -439,7 +223,7 @@
 <script>
 import axios from 'axios';
 export default {
-  name: "PageFormsBase",
+  name: "PageFormsBase_shiyan12345",
   data() {
     const generateData2 = () => {
       const data = [];
@@ -641,7 +425,7 @@ export default {
       this.$refs[formName].resetFields();
        
     },
-    convertData(resultData,resultDataType2){
+    convertData(resultData){
       console.log("resultData",resultData.客户姓名)
       this.ruleFormOutput.userName = resultData.客户姓名
       this.ruleFormOutput.phoneNumber = resultData.联系方式
@@ -658,26 +442,18 @@ export default {
       this.ruleFormOutput.gender = resultData.客户性别
       this.ruleFormOutput.isVisit = resultData.是否回访
       this.ruleFormOutput.emergencyLevel = resultData.紧急程度
-      this.ruleFormOutput.dealResult = resultData.处理过程及结果
-      this.ruleFormOutput.responsibleDp = resultData.责任单位
-      this.ruleFormOutput.visitInfo = resultData.回访情况
-      this.ruleFormOutput.isArgee = resultData.是否满意
-      this.ruleFormOutputType2.ticketType2 = resultDataType2.工单类型2
-      this.ruleFormOutputType2.carNumber = resultDataType2.车辆底盘号
-      this.ruleFormOutputType2.emergencyLevelType2 = resultDataType2.紧急程度2
-      this.ruleFormOutputType2.isVisitType2 = resultDataType2.是否回访2
-      this.ruleFormOutputType2.ticketTitleType2 = resultDataType2.工单标题2
-      this.ruleFormOutputType2.contentType2 = resultDataType2.诉求内容2
-      this.ruleFormOutputType2.goal = resultDataType2.诉求目的2 
+      // this.ruleFormOutput.dealResult = resultData.处理过程及结果
+      // this.ruleFormOutput.responsibleDp = resultData.责任单位
+      // this.ruleFormOutput.visitInfo = resultData.回访情况
+      // this.ruleFormOutput.isArgee = resultData.是否满意
+      
     },
      async postData(){
-       await axios.post(('/api/index'),this.ruleFormInput)
+       await axios.post(('/api/index/shiyan'),this.ruleFormInput)
                     .then((result) => {
                     this.resultData = JSON.parse(result.data)
-                    this.resultDataType2 = JSON.parse(result.data)
-                    this.convertData(this.resultData,this.resultDataType2);
+                    this.convertData(this.resultData);
                     console.log("********12315工单详情**********",this.ruleFormOutput)
-                    console.log("********东风通信工单详情**********",this.ruleFormOutputType2)
                     })
                     .catch((err) => {console.log(err)})
 

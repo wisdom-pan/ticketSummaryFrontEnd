@@ -20,13 +20,16 @@ export default {
     Mock.mock(BASE_PATH + '/api/user/info', {
       'code': 1,
       'id': '100001',
-      'name': '林锦泽',
+      'name': 'test',
       'roles': ['admin'],
       'permissions': [
         { 'name': 'index' },
         { 'name': 'table' },
-        { 'name': 'formsBase' },
+        // { 'name': 'formsBase' },
         { 'name': 'formsEdit' },
+        { 'name': 'formsBaseShiyan' },
+        { 'name': 'formsBaseJingmeng' },
+        { 'name': 'formsBaseDongfeng' },
         { 'name': 'charts' },
         { 'name': 'errorDemo403' },
         { 'name': 'errorDemo404' },

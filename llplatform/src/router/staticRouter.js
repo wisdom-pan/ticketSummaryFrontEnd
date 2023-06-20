@@ -46,6 +46,24 @@ const staticRouter = [
             name: 'formsEdit',
             title: 'menu.richText',
             component: () => import('@/views/pages/forms/PageFormsEdit')
+          },
+          {
+            path: '/forms/shiyan',
+            name: 'formsBaseShiyan',
+            title: 'menu.shiyan',
+            component: () => import('@/views/pages/forms/PageFormsBase_shiyan12345')
+          },
+          {
+            path: '/forms/jingmeng',
+            name: 'formsBaseJingmeng',
+            title: 'menu.jingmeng',
+            component: () => import('@/views/pages/forms/PageFormsBase_jingmeng12345')
+          },
+          {
+            path: '/forms/dongfeng',
+            name: 'formsBaseDongfeng',
+            title: 'menu.dongfeng',
+            component: () => import('@/views/pages/forms/PageFormsBase_dongfeng12345')
           }
         ]
       }, {
