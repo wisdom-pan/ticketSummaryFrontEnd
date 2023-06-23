@@ -36,6 +36,7 @@ export default {
     shiyan: '工单详情',
     jingmeng: '我的待办',
     dongfeng: '我相关的',
+    12348: '相关服务',
     chart: '工单统计',
     error: '错误页',
     settings: '个人设置',

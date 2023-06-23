@@ -64,6 +64,12 @@ const staticRouter = [
             name: 'formsBaseDongfeng',
             title: 'menu.dongfeng',
             component: () => import('@/views/pages/forms/PageFormsBase_dongfeng12345')
+          },
+          {
+            path: '/forms/12348',
+            name: 'formsBase12348',
+            title: 'menu.12348',
+            component: () => import('@/views/pages/forms/PageFormsBase_12348')
           }
         ]
       }, {

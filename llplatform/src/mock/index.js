@@ -30,6 +30,7 @@ export default {
         { 'name': 'formsBaseShiyan' },
         { 'name': 'formsBaseJingmeng' },
         { 'name': 'formsBaseDongfeng' },
+        { 'name': 'formsBase12348' },
         { 'name': 'charts' },
         { 'name': 'errorDemo403' },
         { 'name': 'errorDemo404' },
