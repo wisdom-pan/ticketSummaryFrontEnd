@@ -93,7 +93,7 @@
                   </el-radio-group>
                 </el-form-item>
               </el-col>
-              <el-col :span="18">
+              <el-col :span="22">
                 <el-form-item label="咨询内容" prop="content">
                   <el-input 
                      v-model="ruleFormOutput.content"
@@ -101,7 +101,7 @@
                      :autosize="{ minRows: 3, maxRows: 3}"></el-input>
                 </el-form-item>
               </el-col>
-              <el-col :span="18">
+              <el-col :span="22">
                 <el-form-item label="回复要点" prop="contentInfo">
                   <el-input 
                       v-model="ruleFormOutput.contentInfo"
@@ -181,7 +181,7 @@ export default {
       ruleFormOutput: {
         ticketMode:"",
         ticketType:"",
-        poisition:"",
+        position:"",
         content:"",
         contentInfo:"",
         dealType:"",
@@ -248,7 +248,7 @@ export default {
         // ticketType:[{required:true}],
         // isVisit:[{required:true}],
         // emergencyLevel:[{required:true}],
-        poisition:[{required:true}],
+        position:[{required:true}],
         poisitionInfo:[{required:true}],
         title:[{required:true}],
         content:[{required:true}],
@@ -294,7 +294,7 @@ export default {
       this.ruleFormOutput.content = resultData.咨询内容
       this.ruleFormOutput.contentInfo = resultData.回复要点
       this.ruleFormOutput.dealType = resultData.引导向其他渠道求助
-      this.ruleFormOutput.poisition = resultData.所属地区
+      this.ruleFormOutput.position = resultData.所属地区
       
     },
      async postData(){
