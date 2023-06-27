@@ -1,4 +1,5 @@
-
+#
+地址：https://kuaijieai.up.railway.app/index.html
 ## 简介
 > 工单管理系统，基于[vue](https://cn.vuejs.org/)、[element](http://element-cn.eleme.io/#/zh-CN)搭建的后台管理平台。
 > 考虑到后台管理一般是在电脑端查看，因此本项目没有实现移动端的适配。
@@ -29,9 +30,8 @@
   - 请求错误自动处理
 
 - 功能页面
-  - 表格table
-  - 表单form
-  - 富文本编辑器
+  - 工单编辑
+  - 工单详情提取
   - 图表
   - 权限设置
   - 错误页面
